@@ -9,7 +9,7 @@ api_username = sys.argv[1:][0]  # account for Census API access
 
 zip_path = Path.cwd() / "zip.tsv"
 out_path = Path.cwd() / "out.tsv"
-in_path = Path.cwd() / "MKE-Call-Center-10-5-22.tsv"
+in_path = Path.cwd() / "Data  w 141 blank removed 10-25.txt"
 
 #  Values from
 #  https://api.census.gov/data/2020/acs/acs5/profile/variables.html
