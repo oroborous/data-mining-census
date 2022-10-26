@@ -5,7 +5,7 @@ from pathlib import Path
 from census import Census
 from us import states
 
-api_username = sys.argv[1:][0]  # account for USPS API access
+api_username = sys.argv[1:][0]  # account for Census API access
 
 zip_path = Path.cwd() / "zip.tsv"
 out_path = Path.cwd() / "out.tsv"
