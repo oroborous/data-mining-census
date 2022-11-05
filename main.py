@@ -27,8 +27,8 @@ race_black_amt = "DP05_0038E"
 race_black_pct = "DP05_0038PE"
 race_asian_amt = "DP05_0044E"
 race_asian_pct = "DP05_0044PE"
-hispanic_latino_amt = "DP05_0070E"
-hispanic_latino_pct = "DP05_0070PE"
+hispanic_latino_amt = "DP05_0071E"
+hispanic_latino_pct = "DP05_0071PE"
 
 variables = [
     bachelor_or_higher_amt,

@@ -20,8 +20,8 @@ The following [variables](https://api.census.gov/data/2020/acs/acs5/profile/vari
 - **DP05_0038PE**:  Percent!!RACE!!Total population!!One race!!Black or African American
 - **DP05_0044E**:  Estimate!!RACE!!Total population!!One race!!Asian
 - **DP05_0044PE**:  Percent!!RACE!!Total population!!One race!!Asian
-- **DP05_0070E**:  Estimate!!HISPANIC OR LATINO AND RACE!!Total population
-- **DP05_0070PE**:  Percent!!HISPANIC OR LATINO AND RACE!!Total population
+- **DP05_0071E**:  Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)
+- **DP05_0071PE**:  Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)
 
 
 ## Usage instructions
