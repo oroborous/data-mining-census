@@ -29,12 +29,12 @@ Register for a free account at [Census.gov](https://api.census.gov/data/key_sign
 
 Run `main.py APIKEY` where *APIKEY* is the API key provided in the registration confirmation email.
 
-## Dependencies
+## Dependencies (see requirements.txt)
 - census 0.8.19
 - us 2.0.2
 
 ## Input data
-Input data (MKE-Call-Center-10-5-22.tsv) is tab-delimited, with the following columns. It contains a header row.
+Input data (Data  w 141 blank removed 10-25.txt) is tab-delimited, with the following columns. It contains a header row.
 
 - line.number
 - zip
@@ -103,4 +103,15 @@ ZIP code data from the API is also written to a separate file: `zip.tsv`.
 53207	{"DP02_0068E": 11198.0, "DP02_0068PE": 40.2, "DP03_0063E": 77172.0, "DP02_0113E": 30827.0, "DP02_0113PE": 88.4, "DP02_0114E": 4044.0, "DP02_0114PE": 11.6, "DP05_0037E": 31551.0, "DP05_0037PE": 85.0, "DP05_0038E": 1140.0, "DP05_0038PE": 3.1, "DP05_0044E": 401.0, "DP05_0044PE": 1.1, "DP05_0070E": 37103.0, "DP05_0070PE": 37103.0, "zip code tabulation area": "53207"}
 53221	{"DP02_0068E": 6717.0, "DP02_0068PE": 23.9, "DP03_0063E": 68176.0, "DP02_0113E": 25524.0, "DP02_0113PE": 69.5, "DP02_0114E": 11226.0, "DP02_0114PE": 30.5, "DP05_0037E": 28462.0, "DP05_0037PE": 71.9, "DP05_0038E": 2181.0, "DP05_0038PE": 5.5, "DP05_0044E": 2997.0, "DP05_0044PE": 7.6, "DP05_0070E": 39602.0, "DP05_0070PE": 39602.0, "zip code tabulation area": "53221"}
 53216	{"DP02_0068E": 3306.0, "DP02_0068PE": 17.3, "DP03_0063E": 48263.0, "DP02_0113E": 26922.0, "DP02_0113PE": 92.0, "DP02_0114E": 2352.0, "DP02_0114PE": 8.0, "DP05_0037E": 3763.0, "DP05_0037PE": 12.0, "DP05_0038E": 25305.0, "DP05_0038PE": 80.4, "DP05_0044E": 811.0, "DP05_0044PE": 2.6, "DP05_0070E": 31476.0, "DP05_0070PE": 31476.0, "zip code tabulation area": "53216"}
+</pre>
+
+Run `zip.py` to ingest this file and create a new output file (zip.csv) that contains a summary of call counts per zip code.
+
+### Sample call count summary output data
+
+<pre>
+zip,education,income,nonenglish,white,black,hispanic,calls
+53208,28.9,54100,18.1,36,41,8.1,5690
+53206,6.1,42126,6.4,2.2,93.2,1.8,7679
+53207,40.2,77172,11.6,85,3.1,16.2,6999
 </pre>
